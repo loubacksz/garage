@@ -1,0 +1,4 @@
+Web Server 
+- Just a piece of software that serves web content.
+- A physical server runs a Web-Server, like NGINX, APACHE, etc.
+

@@ -1,5 +1,7 @@
 express - framework to build APIs
 
+nvm - node version manager
+
 web APIs - live inside web-servers - because APIs need web-servers
 
 web-servers - handle  HTTP requests - APIs use HTTP protocol

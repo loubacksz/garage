@@ -1,0 +1,3 @@
+What is EAG?
+- generates an Express application "skeleton" that follows the mvc pattern
+- globally installed with -g flag
