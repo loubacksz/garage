@@ -23,6 +23,8 @@ app.set('port', port);
  * Create HTTP server.
  */
 
+// create a raw HTTP server that will use the Express app as the request handler
+// "Whenever an HTTP request arrives, give it to the Express app to handle"
 const server = http.createServer(app);
 
 /**
