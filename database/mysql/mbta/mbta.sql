@@ -1,0 +1,72 @@
+CREATE DATABASE mbta;
+
+# CONSTRAINTS
+# PRIMARY KEY = UNIQUE + NOT NULL -> THERE IS NO NEED TO ADD NOT NULL OR UNIQUE ON PK COLUMNS
+
+# CREATING TABLES
+CREATE TABLE riders (
+	id INTEGER,
+    name TEXT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE stations (
+	id INTEGER,
+    name VARCHAR(200) NOT NULL UNIQUE,
+    line TEXT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE visits (
+	rider_id INTEGER,
+    station_id INTEGER,
+    FOREIGN KEY(rider_id) REFERENCES riders(id),
+    FOREIGN KEY(station_id) REFERENCES stations(id)
+);
+
+CREATE TABLE cards (
+	id INTEGER,
+    PRIMARY KEY(id)
+);
+
+# DELETING TABLES
+DROP TABLE riders;
+DROP TABLE stations;
+DROP TABLE visitis;
+
+# UPDATE TABLES (ALTER TABLE)
+ALTER TABLE visits
+DROP FOREIGN KEY visits_ibfk_1;
+
+ALTER TABLE visits
+RENAME TO swipes;
+
+ALTER TABLE swipes
+ADD COLUMN id INTEGER,
+ADD COLUMN datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN amount DECIMAL(10,2) NOT NULL CHECK(amount != 0),
+RENAME COLUMN rider_id TO card_id,
+ADD PRIMARY KEY (id);
+
+SELECT * FROM swipes; # THERE IS NO FOREIGN KEYS
+
+ALTER TABLE swipes
+ADD FOREIGN KEY(station_id) REFERENCES stations(id),
+ADD FOREIGN KEY(card_id) REFERENCES cards(id);
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
