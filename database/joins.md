@@ -7,3 +7,5 @@
 - Left table = first table from the select
 - Right table = second table from the select (where you join)
 - Matched data = rows that have a value for the related column
+
+### RIGHT JOIN
