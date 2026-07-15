@@ -8,4 +8,4 @@ function func1(x){
 } 
 
 let resultado = func1(2)(3); // 2 é o parametro da func1 e 3 é o parametro da func2
-console.log(resultado);
+console.log(resultado); // resultado no console é 6
