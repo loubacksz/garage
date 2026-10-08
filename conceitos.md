@@ -1,0 +1,3 @@
+## Parse / Parsed
+-  O que é: O processo em que um programa (chamado de parser ou analisador sintático) lê uma sequência de dados de entrada — como um texto, um código-fonte, um arquivo JSON, XML ou HTML — e os converte em uma estrutura de dados organizada (geralmente em formato de árvore) que o computador consegue interpretar e manipular.
+- Exemplo: "Parsear" uma resposta de uma API em formato JSON para extrair valores específicos (como o nome ou o preço de um produto) e exibi-los em um aplicativo. Para essa finalidade, ferramentas como a Parse Platform ajudam a gerenciar backends, enquanto APIs como a Parse convertem sites em dados estruturados.

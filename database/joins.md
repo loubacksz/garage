@@ -1,4 +1,4 @@
-## JOINS - SQL clauses (keywords)
+## JOINS - SQL Clauses (keywords)
 - Combine rows -> different tables -> based on -> related column  
 
 ### LEFT JOIN
